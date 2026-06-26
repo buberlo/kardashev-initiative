@@ -3,8 +3,46 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Kardashev Initiative — Support</title>
-<meta name="description" content="The Kardashev Initiative — a literary hard-science-fiction civilization roguelite. Found a civilization, shape its history, keep its story. Support and help.">
+<title>The Kardashev Initiative — a civilization roguelite that writes its own obituary</title>
+<meta name="description" content="A literary hard-science-fiction roguelite for iPhone, iPad, and Mac. Guide a civilization toward the stars — and when it falls, the game writes its obituary. Free, offline, no ads, no accounts, no data collection.">
+<link rel="canonical" href="https://buberlo.github.io/kardashev-initiative/">
+<meta name="theme-color" content="#06080d">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Kardashev Initiative">
+<meta property="og:title" content="The Kardashev Initiative — the obituary is the product">
+<meta property="og:description" content="A literary hard-SF roguelite. Guide a civilization toward the stars; when it falls, the game writes its obituary. Free, offline, no ads or accounts. iPhone · iPad · Mac.">
+<meta property="og:url" content="https://buberlo.github.io/kardashev-initiative/">
+<meta property="og:image" content="https://buberlo.github.io/kardashev-initiative/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Kardashev Initiative — a civilization roguelite that writes its own obituary.">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Kardashev Initiative — the obituary is the product">
+<meta name="twitter:description" content="A literary hard-SF roguelite. Guide a civilization; when it falls, the game writes its obituary. Free, offline. iPhone · iPad · Mac.">
+<meta name="twitter:image" content="https://buberlo.github.io/kardashev-initiative/og-image.png">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "The Kardashev Initiative",
+  "description": "A literary hard-science-fiction civilization roguelite. Guide a civilization toward the stars; when a run ends it writes a short literary obituary of the civilization you led. Free, offline, no data collection.",
+  "url": "https://buberlo.github.io/kardashev-initiative/",
+  "image": "https://buberlo.github.io/kardashev-initiative/og-image.png",
+  "applicationCategory": "GameApplication",
+  "genre": ["Roguelike", "Strategy", "Science Fiction"],
+  "operatingSystem": "iOS, iPadOS, macOS",
+  "inLanguage": ["en", "de"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "downloadUrl": "https://apps.apple.com/app/id6781195701",
+  "author": { "@type": "Person", "name": "Konrad Kern" }
+}
+</script>
 <style>
   :root{
     --bg:#06080d; --bg2:#0b0f17; --panel:#0e131d; --line:#1b2535;
@@ -21,40 +59,61 @@
     font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:760px;margin:0 auto;padding:0 22px}
-  header{padding:74px 0 38px;text-align:center}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  header{padding:70px 0 18px;text-align:center}
   .kicker{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.34em;color:var(--amber);text-transform:uppercase}
-  h1{font-weight:800;letter-spacing:.01em;font-size:clamp(30px,6vw,46px);margin:16px 0 6px}
-  .tag{color:var(--muted);font-size:17px;margin:0 auto;max-width:540px}
-  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:34px 0}
-  .lede{font-size:18px;color:#cdd6e4}
-  .lede b{color:var(--ink)}
+  h1{font-weight:800;letter-spacing:.01em;font-size:clamp(30px,6vw,50px);margin:16px 0 8px;line-height:1.05}
+  .tag{color:var(--muted);font-size:18px;margin:0 auto;max-width:560px}
+  .hero{display:flex;gap:30px;align-items:center;justify-content:center;flex-wrap:wrap;margin:30px 0 6px}
+  .hero img{width:300px;max-width:72vw;border-radius:22px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,0,0,.55)}
+  .pitch{max-width:380px;text-align:left}
+  .pitch p{font-size:17px;color:#cdd6e4}
+  .pitch b{color:var(--ink)}
+  .cta{display:inline-block;margin-top:14px;padding:13px 22px;border-radius:999px;font-weight:700;color:#0a0d12;background:var(--amber);text-decoration:none}
+  .cta:hover{filter:brightness(1.06)}
+  .sub-cta{display:block;margin-top:10px;color:var(--muted);font-size:13px}
+  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent);margin:40px 0}
   section{margin:30px 0}
   h2{font:700 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);margin:0 0 14px}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:12px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
   .card h3{margin:0 0 6px;font-size:16px}
   .card p{margin:0;color:var(--muted)}
   a{color:var(--amber);text-decoration:none}
   a:hover{text-decoration:underline}
-  .mail{display:inline-block;margin-top:6px;font-weight:600}
   footer{color:var(--muted);font-size:13px;text-align:center;padding:46px 0 60px}
   footer a{color:var(--muted)}
-  .badge{display:inline-block;margin-top:22px;padding:11px 18px;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-weight:600;background:var(--bg2)}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <div class="kicker">Initiative Command</div>
-    <h1>The Kardashev Initiative</h1>
-    <p class="tag">Found a civilization. Shape its history. Keep its story.</p>
-    <a class="badge" href="https://apps.apple.com/app/id6781195701">On the App Store</a>
+    <h1>The obituary is the product.</h1>
+    <p class="tag">A literary hard–science-fiction roguelite. Guide a civilization toward the stars — and when it falls, the game writes down how.</p>
   </header>
 
-  <p class="lede">A literary, hard–science-fiction civilization roguelite. Guide a species
-  from its first orbital stations toward the energy of an entire galaxy — and when the run
-  ends, in triumph or extinction, the game writes its <b>Chronicle</b>: a short obituary of
-  the civilization you led. Fully offline. No ads, no accounts, no data collection.</p>
+  <div class="hero">
+    <img src="shot-chronicle.png" alt="A generated Chronicle: the literary obituary of a fallen civilization in The Kardashev Initiative." width="506" height="1100" loading="lazy">
+    <div class="pitch">
+      <p>You make the decisions that define a civilization — fund the Dyson swarm or seize its budget, free the machine mind or cage it — across a run of 10–25 minutes that <b>always ends</b>, in triumph or extinction.</p>
+      <p>When it ends, the game writes a <b>Chronicle</b>: a short, literary obituary of the people you led and lost. The simulation is just the ink.</p>
+      <a class="cta" href="https://apps.apple.com/app/id6781195701">Get it free on the App Store</a>
+      <span class="sub-cta">iPhone · iPad · Apple-silicon Mac · English &amp; German · no ads, no accounts, no data collection</span>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <section>
+    <h2>What it is</h2>
+    <div class="grid">
+      <div class="card"><h3>500+ event cards</h3><p>Authored decisions with real tradeoffs whose consequences return generations later. No fake choices.</p></div>
+      <div class="card"><h3>Seeded galaxies</h3><p>Every run is a different map, a different story, and a different hidden Great Filter tuned to your weakness.</p></div>
+      <div class="card"><h3>Hard SF as mechanics</h3><p>Dyson swarms, wormhole gates, Matrioshka brains, von Neumann probes, the dark-forest answer to the Fermi paradox.</p></div>
+      <div class="card"><h3>Private by design</h3><p>Fully offline. No ads, no accounts, no in-app purchases, no data collection. Every Chronicle stays on your device.</p></div>
+    </div>
+  </section>
 
   <div class="rule"></div>
 
@@ -63,42 +122,36 @@
     <div class="card">
       <h3>Contact</h3>
       <p>Questions, bugs, or feedback — email
-      <a class="mail" href="mailto:kern.konrad@gmail.com">kern.konrad@gmail.com</a>.
+      <a href="mailto:kern.konrad@gmail.com">kern.konrad@gmail.com</a>.
       Accessibility feedback is especially welcome.</p>
     </div>
   </section>
 
   <section>
     <h2>Common Questions</h2>
-    <div class="card">
-      <h3>My run disappeared.</h3>
-      <p>One run is active at a time. Finishing a run (victory or defeat) retires its save and
-      writes the Chronicle. Force-quitting mid-run is safe — the game saves after every beat and
-      offers Continue on the home screen.</p>
-    </div>
-    <div class="card">
-      <h3>It feels too hard / I keep collapsing.</h3>
-      <p>Each run secretly favors one threat — machines, biosphere, war, or cohesion. Watch which
-      meters climb fastest and spend your decisions easing that pressure. Declaring victory at
-      Kardashev Type II is legitimate; the climb to Type III is meant to be a gamble.</p>
-    </div>
-    <div class="card">
-      <h3>Does it need internet?</h3>
-      <p>No. The game is fully offline and collects no data of any kind.</p>
-    </div>
-    <div class="card">
-      <h3>Languages</h3>
-      <p>English and German — the entire interface and every event card. Choose your language in
-      Settings (System / English / Deutsch).</p>
-    </div>
-    <div class="card">
-      <h3>Accessibility</h3>
-      <p>VoiceOver labels on core readouts, honors Reduce Motion, and respects Dynamic Type.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>My run disappeared.</h3>
+        <p>One run is active at a time. Finishing a run retires its save and writes the Chronicle. Force-quitting mid-run is safe — the game saves after every beat and offers Continue on the home screen.</p>
+      </div>
+      <div class="card">
+        <h3>It feels too hard.</h3>
+        <p>Each run secretly favors one threat — machines, biosphere, war, or cohesion. Watch which meters climb fastest and ease that pressure. Declaring victory at Kardashev Type II is legitimate; the climb to Type III is meant to be a gamble.</p>
+      </div>
+      <div class="card">
+        <h3>Does it need internet?</h3>
+        <p>No. The game is fully offline and collects no data of any kind.</p>
+      </div>
+      <div class="card">
+        <h3>Languages</h3>
+        <p>English and German — the entire interface and every event card. Choose in Settings (System / English / Deutsch).</p>
+      </div>
     </div>
   </section>
 
   <footer>
     &copy; 2026 Konrad Kern · <a href="privacy.html">Privacy Policy</a> ·
+    <a href="https://apps.apple.com/app/id6781195701">App Store</a> ·
     <a href="mailto:kern.konrad@gmail.com">Support</a>
   </footer>
 </div>
