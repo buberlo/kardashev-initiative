@@ -6,8 +6,6 @@ Live site: https://buberlo.github.io/kardashev-initiative/
 
 ## GitHub Pages
 
-Pages is a legacy site. GitHub Actions are disabled, so a push to `main` does not publish. The last build from `main` stopped at `cd7a4de` (June 2026), which still says the game is free.
+Pages publishes the `main` branch from `/` (`build_type`: legacy). GitHub Actions are disabled on this repo. The latest Pages build is still `cd7a4de` (2026-06-26), which calls the game free. Current `main` already says $4.99.
 
-Publish from the `gh-pages` branch (root). That branch should contain the same site files as `main`: `index.html`, `press.html`, `privacy.html`, and the image and trailer assets.
-
-If the live site is stale, in the repository settings set **Pages → Branch** to `gh-pages` and folder **`/ (root)`**, then save. The API accepts `gh-pages`, `master`, and `master /docs` as the source. It will not re-save `main`.
+A merge to `main` should start a new legacy Pages build from that HEAD. If the build stays stuck on `cd7a4de`, enable GitHub Actions, then push to `main` again.
